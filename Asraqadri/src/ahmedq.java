@@ -8,6 +8,7 @@ public class ahmedq {
 		WebDriver driver = new FirefoxDriver();
 		String url = "http://www.faceboook.com";
 		driver.get(url);
+		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("asraqadri1@gmail.com");
 		driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys("1234");
 		driver.findElement(By.xpath(".//*[@id='loginbutton']")).click();
